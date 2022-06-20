@@ -3,8 +3,6 @@ import { createMemo } from 'solid-js'
 
 export const Job = (props) => {
 
-  console.log(moment(props.end, 'YYYY-MM'))
-
   const endYear = createMemo(() => {
     if (props.end)
       return moment(props.end, 'YYYY-MM').format('YYYY')

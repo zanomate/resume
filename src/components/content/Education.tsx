@@ -1,10 +1,11 @@
-import { School } from './fragments/School'
-import { SectionHeader } from './fragments/SectionHeader'
-import { TimelineItem } from './fragments/TimelineItem'
+import { School } from '../fragments/School'
+import { Section } from '../fragments/Section'
+import { SectionHeader } from '../fragments/SectionHeader'
+import { TimelineItem } from '../fragments/TimelineItem'
 
 export const Education = () => {
   return (
-    <div class="flex flex-col items-stretch py-8">
+    <Section>
       <SectionHeader title="Education" />
       <ul>
         <TimelineItem connected>
@@ -47,6 +48,6 @@ export const Education = () => {
           />
         </TimelineItem>
       </ul>
-    </div>
+    </Section>
   )
 }

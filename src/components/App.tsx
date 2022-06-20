@@ -1,9 +1,13 @@
-import { About } from './About'
-import { Education } from './Education'
-import { Experience } from './Experience'
-import { Footer } from './Footer'
-import { Header } from './Header'
-import { Info } from './Info'
+import { About } from './content/About'
+import { Languages } from './content/Languages'
+import { ProfilePicture } from './content/ProfilePicture'
+import { SoftSkills } from './content/SoftSkills'
+import { TechSkills } from './content/TechSkills'
+import { Education } from './content/Education'
+import { Experience } from './content/Experience'
+import { Footer } from './content/Footer'
+import { Header } from './content/Header'
+import { Info } from './content/Info'
 
 export const App = () => {
   return (
@@ -12,10 +16,14 @@ export const App = () => {
         <Header />
 
         <div class="grow grid grid-cols-1 lg:grid-cols-3">
-          <div class="col-span-3 lg:col-span-1 border-b-4 lg:border-b-0 lg:border-r-4 lg:pr-8">
+          <div class="flex flex-col items-stretch col-span-3 lg:col-span-1 border-b-4 lg:border-b-0 lg:border-r-4 lg:pr-8 flex flex-col items-start py-8">
+            <ProfilePicture />
             <Info />
+            <TechSkills />
+            <SoftSkills />
+            <Languages />
           </div>
-          <div class="col-span-3 lg:col-span-2 lg:pl-8">
+          <div class="col-span-3 lg:col-span-2 lg:pl-8 pt-4">
             <About />
             <Experience />
             <Education />

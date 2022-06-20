@@ -1,10 +1,11 @@
-import { SectionHeader } from './fragments/SectionHeader'
-import { TimelineItem } from './fragments/TimelineItem'
-import { Job } from './fragments/Job'
+import { Section } from '../fragments/Section'
+import { SectionHeader } from '../fragments/SectionHeader'
+import { TimelineItem } from '../fragments/TimelineItem'
+import { Job } from '../fragments/Job'
 
 export const Experience = () => {
   return (
-    <div class="flex flex-col items-stretch py-8">
+    <Section>
       <SectionHeader title="Experience" />
       <ul>
         <TimelineItem connected selected>
@@ -54,6 +55,6 @@ export const Experience = () => {
           </Job>
         </TimelineItem>
       </ul>
-    </div>
+    </Section>
   )
 }
