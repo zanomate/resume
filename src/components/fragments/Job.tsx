@@ -26,9 +26,13 @@ export const Job = (props) => {
       <div class="flex flex-col flex-grow items-stretch">
         <span class="font-semibold">{props.jobTitle}</span>
         <span class="text-sm">
-          <a href={props.companyLink} target="_blank" class="underline font-semibold text-violet-500">
-            {props.companyName}
-          </a>
+          {props.companyLink ? (
+            <a href={props.companyLink} target="_blank" class="underline font-semibold text-violet-500">
+              {props.companyName}
+            </a>
+          ) : (
+            <span class="underline font-semibold">{props.companyName}</span>
+          )}
           {' '}
           ({duration})
         </span>

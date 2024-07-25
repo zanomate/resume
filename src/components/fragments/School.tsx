@@ -3,7 +3,7 @@ export const School = (props) => {
     <div class="flex flex-row w-full my-2 pb-4">
     <div class="flex flex-col flex-grow items-stretch">
       <span class="font-semibold">{props.type}</span>
-      <span class="text-lg tracking-wide">
+      <span class="text-sm tracking-wide">
         {props.name}
       </span>
       <span class="text-sm">
