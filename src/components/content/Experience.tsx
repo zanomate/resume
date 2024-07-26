@@ -53,7 +53,7 @@ export const Experience = () => {
             start="2016-11"
             end="2019-05"
           >
-            As a Web Development Consultant, I have experience working with widely-used Java frameworks, including Spring and Hybernate.
+            As a Web Development Consultant, I have experience working with widely-used Java frameworks.
             In the last year, I have specialized in developing CMS portals using the Adobe Experience Manager (AEM) platform.
           </Job>
         </TimelineItem>

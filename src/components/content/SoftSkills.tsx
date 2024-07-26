@@ -7,11 +7,11 @@ export const SoftSkills = () => {
     <Section>
       <SectionHeader title="Soft" />
       <div class="flex flex-row flex-wrap gap-2">
-        <Chip label="Teamwork" />
-        <Chip label="Communication" />
-        <Chip label="Learn" />
-        <Chip label="Problem-solving" />
-        <Chip label="Creativity" />
+        <Chip label="Teamwork" selected />
+        <Chip label="Communication" selected />
+        <Chip label="Learn" selected />
+        <Chip label="Problem-solving" selected />
+        <Chip label="Creativity" selected />
       </div>
     </Section>
   )

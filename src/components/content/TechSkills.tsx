@@ -14,17 +14,21 @@ export const TechSkills = () => {
         <Chip label="CSS3" partialSelected />
         <Chip label="Sass" partialSelected />
         <Chip label="JavaScript" selected />
-        <Chip label="Responsive Design" partialSelected />
         <Chip label="Node" partialSelected />
+        <Chip label="Next" partialSelected />
         <Chip label="Tailwind" partialSelected />
         <Chip label="Solid JS" partialSelected />
+        <Chip label="Svelte" />
+        <Chip label="Vue" />
         <Chip label="Vite" partialSelected />
+        <Chip label="CRA" partialSelected />
         <Chip label="Webpack" />
         <Chip label="Rollup" />
         <Chip label="Rest API" partialSelected />
-        <Chip label="Svelte" />
-        <Chip label="Vue" />
-        <Chip label="SQL" />
+        <Chip label="AWS" />
+        <Chip label="Docker" />
+        <Chip label="Kubernetes " />
+        <Chip label="SQL" partialSelected />
         <Chip label="Java" partialSelected />
       </div>
     </Section>
