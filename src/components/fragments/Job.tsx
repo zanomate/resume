@@ -2,10 +2,8 @@ import moment from 'moment'
 import { createMemo } from 'solid-js'
 
 export const Job = (props) => {
-
   const endYear = createMemo(() => {
-    if (props.end)
-      return moment(props.end, 'YYYY-MM').format('YYYY')
+    if (props.end) return moment(props.end, 'YYYY-MM').format('YYYY')
     return 'Present'
   })
 
@@ -32,15 +30,12 @@ export const Job = (props) => {
             </a>
           ) : (
             <span class="underline font-semibold">{props.companyName}</span>
-          )}
-          {' '}
-          ({duration})
+          )}{' '}
+          {duration() ? `(${duration()})` : ''}
         </span>
-        <span class="text-sm">
-          {props.children}
-        </span>
+        <span class="text-sm">{props.children}</span>
       </div>
-      <span class="text-sm mt-0.5">{endYear}</span>
+      <span class="text-sm mt-0.5 text-nowrap">{endYear()}</span>
     </div>
   )
 }

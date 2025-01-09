@@ -13,7 +13,7 @@ export const Info = () => {
       <SectionSubHeader title="Mail" />
       <InfoField value="matteozanoncello.dev@gmail.com" showCopy />
       <SectionSubHeader title="City" />
-      <InfoField value="Verona - Italy" />
+      <InfoField value="Verona (IT)" />
 
       <hr class="w-full mt-4" />
 

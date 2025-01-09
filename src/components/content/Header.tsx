@@ -6,7 +6,7 @@ export const Header = () => {
       </div>
       <div class="flex flex-col flex-grow pt-12 pb-8">
         <span class="text-4xl sm:text-5xl tracking-wide font-bold uppercase">Matteo Zanoncello</span>
-        <span class="tracking-wide text-lg mt-2">Senior Front-End Software Engineer</span>
+        <span class="tracking-wide text-lg mt-2">Senior Front-End Software Engineer | UX Designer</span>
       </div>
     </div>
   )
