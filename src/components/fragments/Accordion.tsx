@@ -1,4 +1,4 @@
-import { createEffect, createSignal, JSX } from 'solid-js'
+import { createSignal, JSX } from 'solid-js'
 
 interface AccordionProps {
   children: JSX.Element
