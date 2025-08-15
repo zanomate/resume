@@ -1,20 +1,27 @@
-import { FaRegularCopy } from 'solid-icons/fa'
-import { Show } from 'solid-js'
+import { IconTypes } from 'solid-icons'
+import { FaSolidCopy } from 'solid-icons/fa'
 import { copyToClipboard } from '../../helpers/copyToClipboard'
 
-export const InfoField = (props) => {
+export interface InfoFieldProps {
+  icon: IconTypes
+  value: string
+}
+
+export const InfoField = (props: InfoFieldProps) => {
+  const { icon: Icon, value } = props
+
   const handleCopy = () => {
-    copyToClipboard(props.value)
+    copyToClipboard(value)
   }
 
   return (
-    <div class="flex flex-row justify-center w-full mb-2">
-      <span class="flex-grow">{props.value}</span>
-      <Show when={props.showCopy}>
-        <button onClick={handleCopy} class="float-right text-gray-400 hover:text-violet-700">
-          <FaRegularCopy size={16} />
-        </button>
-      </Show>
+    <div
+      class="flex flex-row items-center w-full mb-2 text-outline hover:text-primary my-2 cursor-pointer"
+      onClick={handleCopy}
+    >
+      <Icon size={20} />
+      <span class="flex-grow ml-2 mr-auto">{value}</span>
+      <FaSolidCopy size={16} />
     </div>
   )
 }

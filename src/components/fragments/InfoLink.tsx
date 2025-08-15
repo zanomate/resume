@@ -1,12 +1,19 @@
-export const InfoLink = (props) => {
+import { IconTypes } from 'solid-icons'
+import { FaSolidArrowUpRightFromSquare } from 'solid-icons/fa'
+
+export interface InfoLinkProps {
+  icon: IconTypes
+  value: string
+  link: string
+}
+
+export const InfoLink = (props: InfoLinkProps) => {
+  const { icon: Icon, value, link } = props
   return (
-    <a
-      target="_blank"
-      href={props.link}
-      class="text-gray-400 hover:text-violet-700 flex flex-row items-center w-full my-2"
-    >
-      <props.icon size={20} />
-      <span class="ml-4">{props.value}</span>
+    <a target="_blank" href={link} class="text-outline hover:text-primary flex flex-row items-center w-full my-2">
+      <Icon size={20} />
+      <span class="ml-2 mr-auto">{value}</span>
+      <FaSolidArrowUpRightFromSquare />
     </a>
   )
 }

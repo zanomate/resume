@@ -1,5 +1,3 @@
 export const ProfilePicture = () => {
-  return (
-    <img alt="profile" src="/assets/profile.jpg" class="rounded-full max-h-48 mb-2 self-center" />
-  )
+  return <img alt="profile" src="/assets/profile-pixel-art.png" class="mb-2 self-center" />
 }

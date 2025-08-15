@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@import "./style/theme-colors.css";
+
+@import "./style/layer-base.css";

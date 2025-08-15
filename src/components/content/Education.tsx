@@ -8,24 +8,26 @@ export const Education = () => {
     <Section>
       <SectionHeader title="Education" />
       <ul>
-        <TimelineItem connected>
+        <TimelineItem connected="full">
           <School
             type="Master degree (Summa cum laude)"
-            name={<>
-              <span class="whitespace-nowrap">Computer Science and Engineering</span>
-              {' '}
-              <span class="whitespace-nowrap">(Software Security)</span>
-            </>}
+            name={
+              <>
+                <span class="whitespace-nowrap">Computer Science and Engineering</span>{' '}
+                <span class="whitespace-nowrap">(Software Security)</span>
+              </>
+            }
             schoolName="Università degli studi di Verona"
             schoolLink="https://www.di.univr.it/"
             completion="2016"
           >
-            <b>Skills:</b> Software Security, Network Security, Malware, Cryptography, Advanced Database, Algorithms and Complexity, Logic and Languages, Information Systems
+            <b>Skills:</b> Software Security, Network Security, Malware, Cryptography, Advanced Database, Algorithms and
+            Complexity, Logic and Languages, Information Systems
             <br />
             <b>Thesis:</b> "Similarity check with the use of Symbolic Automata"
           </School>
         </TimelineItem>
-        <TimelineItem connected>
+        <TimelineItem connected="half">
           <School
             type="Bachelor degree"
             name="Computer Science"
@@ -33,7 +35,8 @@ export const Education = () => {
             schoolLink="https://www.di.univr.it/"
             completion="2014"
           >
-            <b>Skills:</b> Mathematical Analysis, Logic, Linear Algebra, Physics, Programming, Algorithms, Database, Operating Systems, Computer Architecture, Networks, Languages and Compilers
+            <b>Skills:</b> Mathematical Analysis, Logic, Linear Algebra, Physics, Programming, Algorithms, Database,
+            Operating Systems, Computer Architecture, Networks, Languages and Compilers
             <br />
             <b>Internship:</b> "DexStudio", a tool for the use of the "Android Manipulation Library" Amalia
           </School>

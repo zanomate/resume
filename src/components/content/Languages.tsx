@@ -1,4 +1,4 @@
-import { ProgressBar } from '../fragments/ProgressBar'
+import { Dots } from '../fragments/Dots'
 import { Section } from '../fragments/Section'
 import { SectionHeader } from '../fragments/SectionHeader'
 
@@ -6,8 +6,8 @@ export const Languages = () => {
   return (
     <Section>
       <SectionHeader title="Languages" />
-      <ProgressBar label="Italian" progress="100" />
-      <ProgressBar label="English" progress="70" />
+      <Dots label="Italian" total={8} active={8} />
+      <Dots label="English" total={8} active={6} />
     </Section>
   )
 }

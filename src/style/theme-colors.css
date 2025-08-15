@@ -1,0 +1,180 @@
+:root {
+  --scheme-light-primary: #9a4b59;
+  --scheme-light-on-primary: #ffffff;
+  --scheme-light-primary-container: #ffccd2;
+  --scheme-light-on-primary-container: #994a58;
+  --scheme-light-primary-fixed: #ffccd2;
+  --scheme-light-primary-fixed-dim: #ffa4b1;
+  --scheme-light-on-primary-fixed: #5f1d2b;
+  --scheme-light-on-primary-fixed-variant: #823947;
+
+  --scheme-light-secondary: #785d60;
+  --scheme-light-on-secondary: #ffffff;
+  --scheme-light-secondary-container: #f4d0d4;
+  --scheme-light-on-secondary-container: #775c5f;
+  --scheme-light-secondary-fixed: #f4d0d4;
+  --scheme-light-secondary-fixed-dim: #d7b5b8;
+  --scheme-light-on-secondary-fixed: #452e31;
+  --scheme-light-on-secondary-fixed-variant: #634a4d;
+
+  --scheme-light-tertiary: #7b5e3d;
+  --scheme-light-on-tertiary: #ffffff;
+  --scheme-light-tertiary-container: #f9d2a9;
+  --scheme-light-on-tertiary-container: #7a5e3c;
+  --scheme-light-tertiary-fixed: #f9d2a9;
+  --scheme-light-tertiary-fixed-dim: #dbb78f;
+  --scheme-light-on-tertiary-fixed: #473013;
+  --scheme-light-on-tertiary-fixed-variant: #664b2c;
+
+  --scheme-light-error: #c2211f;
+  --scheme-light-on-error: #ffffff;
+  --scheme-light-error-container: #ffcdc7;
+  --scheme-light-on-error-container: #c0201e;
+
+  --scheme-light-background: #fff8f7;
+  --scheme-light-on-background: #978e8e;
+
+  --scheme-light-surface-bright: #fff8f7;
+  --scheme-light-surface: #fff8f7;
+  --scheme-light-surface-dim: #e2d7d8;
+  --scheme-light-on-surface: #4d4646;
+  --scheme-light-surface-tint: #934654;
+
+  --scheme-light-surface-container-lowest: #ffffff;
+  --scheme-light-surface-container-low: #fcf1f1;
+  --scheme-light-surface-container: #f7ebeb;
+  --scheme-light-surface-container-high: #f1e6e6;
+  --scheme-light-surface-container-highest: #ebe0e0;
+
+  --scheme-light-surface-variant: #f1dedf;
+  --scheme-light-on-surface-variant: #6e6061;
+
+  --scheme-light-inverse-surface: #352f2f;
+  --scheme-light-inverse-on-surface: #bfb5b5;
+  --scheme-light-inverse-primary: #d27987;
+
+  --scheme-light-outline: #8e7f80;
+  --scheme-light-outline-variant: #e7d4d6;
+
+  --scheme-dark-primary: #de8391;
+  --scheme-dark-on-primary: #390110;
+  --scheme-dark-primary-container: #662331;
+  --scheme-dark-on-primary-container: #df8492;
+  --scheme-dark-primary-fixed: #833947;
+  --scheme-dark-primary-fixed-dim: #662331;
+  --scheme-dark-on-primary-fixed: #ffe3e5;
+  --scheme-dark-on-primary-fixed-variant: #ffa4b2;
+
+  --scheme-dark-secondary: #b59599;
+  --scheme-dark-on-secondary: #261315;
+  --scheme-dark-secondary-container: #4b3437;
+  --scheme-dark-on-secondary-container: #b6969a;
+  --scheme-dark-secondary-fixed: #644a4e;
+  --scheme-dark-secondary-fixed-dim: #4b3437;
+  --scheme-dark-on-secondary-fixed: #ffe3e5;
+  --scheme-dark-on-secondary-fixed-variant: #d7b5b9;
+
+  --scheme-dark-tertiary: #b99772;
+  --scheme-dark-on-tertiary: #261400;
+  --scheme-dark-tertiary-container: #4d3518;
+  --scheme-dark-on-tertiary-container: #ba9873;
+  --scheme-dark-tertiary-fixed: #674c2c;
+  --scheme-dark-tertiary-fixed-dim: #4d3518;
+  --scheme-dark-on-tertiary-fixed: #ffe5cc;
+  --scheme-dark-on-tertiary-fixed-variant: #dcb790;
+
+  --scheme-dark-error: #ff7063;
+  --scheme-dark-on-error: #3a0001;
+  --scheme-dark-error-container: #7b0007;
+  --scheme-dark-on-error-container: #ff7265;
+
+  --scheme-dark-background: #171213;
+  --scheme-dark-on-background: #686061;
+
+  --scheme-dark-surface-bright: #3e3838;
+  --scheme-dark-surface: #171213;
+  --scheme-dark-surface-dim: #171213;
+  --scheme-dark-on-surface: #cbc1c1;
+  --scheme-dark-surface-tint: #ffb2bc;
+
+  --scheme-dark-surface-container-lowest: #120d0d;
+  --scheme-dark-surface-container-low: #1f1a1b;
+  --scheme-dark-surface-container: #241e1f;
+  --scheme-dark-surface-container-high: #2e2929;
+  --scheme-dark-surface-container-highest: #393334;
+
+  --scheme-dark-surface-variant: #504445;
+  --scheme-dark-on-surface-variant: #aa999a;
+
+  --scheme-dark-inverse-surface: #ebe0e0;
+  --scheme-dark-inverse-on-surface: #524b4b;
+  --scheme-dark-inverse-primary: #a0505e;
+
+  --scheme-dark-outline: #877879;
+  --scheme-dark-outline-variant: #433738;
+
+  --scheme-shadow: #000000;
+  --scheme-scrim: #000000;
+}
+
+@theme inline {
+  --color-primary: light-dark(var(--scheme-light-primary), var(--scheme-dark-primary));
+  --color-on-primary: light-dark(var(--scheme-light-on-primary), var(--scheme-dark-on-primary));
+  --color-primary-container: light-dark(var(--scheme-light-primary-container), var(--scheme-dark-primary-container));
+  --color-on-primary-container: light-dark(var(--scheme-light-on-primary-container), var(--scheme-dark-on-primary-container));
+  --color-primary-fixed: light-dark(var(--scheme-light-primary-fixed), var(--scheme-dark-primary-fixed));
+  --color-primary-fixed-dim: light-dark(var(--scheme-light-primary-fixed-dim), var(--scheme-dark-primary-fixed-dim));
+  --color-on-primary-fixed: light-dark(var(--scheme-light-on-primary-fixed), var(--scheme-dark-on-primary-fixed));
+  --color-on-primary-fixed-variant: light-dark(var(--scheme-light-on-primary-fixed-variant), var(--scheme-dark-on-primary-fixed-variant));
+
+  --color-secondary: light-dark(var(--scheme-light-secondary), var(--scheme-dark-secondary));
+  --color-on-secondary: light-dark(var(--scheme-light-on-secondary), var(--scheme-dark-on-secondary));
+  --color-secondary-container: light-dark(var(--scheme-light-secondary-container), var(--scheme-dark-secondary-container));
+  --color-on-secondary-container: light-dark(var(--scheme-light-on-secondary-container), var(--scheme-dark-on-secondary-container));
+  --color-secondary-fixed: light-dark(var(--scheme-light-secondary-fixed), var(--scheme-dark-secondary-fixed));
+  --color-secondary-fixed-dim: light-dark(var(--scheme-light-secondary-fixed-dim), var(--scheme-dark-secondary-fixed-dim));
+  --color-on-secondary-fixed: light-dark(var(--scheme-light-on-secondary-fixed), var(--scheme-dark-on-secondary-fixed));
+  --color-on-secondary-fixed-variant: light-dark(var(--scheme-light-on-secondary-fixed-variant), var(--scheme-dark-on-secondary-fixed-variant));
+
+  --color-tertiary: light-dark(var(--scheme-light-tertiary), var(--scheme-dark-tertiary));
+  --color-on-tertiary: light-dark(var(--scheme-light-on-tertiary), var(--scheme-dark-on-tertiary));
+  --color-tertiary-container: light-dark(var(--scheme-light-tertiary-container), var(--scheme-dark-tertiary-container));
+  --color-on-tertiary-container: light-dark(var(--scheme-light-on-tertiary-container), var(--scheme-dark-on-tertiary-container));
+  --color-tertiary-fixed: light-dark(var(--scheme-light-tertiary-fixed), var(--scheme-dark-tertiary-fixed));
+  --color-tertiary-fixed-dim: light-dark(var(--scheme-light-tertiary-fixed-dim), var(--scheme-dark-tertiary-fixed-dim));
+  --color-on-tertiary-fixed: light-dark(var(--scheme-light-on-tertiary-fixed), var(--scheme-dark-on-tertiary-fixed));
+  --color-on-tertiary-fixed-variant: light-dark(var(--scheme-light-on-tertiary-fixed-variant), var(--scheme-dark-on-tertiary-fixed-variant));
+
+  --color-error: light-dark(var(--scheme-light-error), var(--scheme-dark-error));
+  --color-on-error: light-dark(var(--scheme-light-on-error), var(--scheme-dark-on-error));
+  --color-error-container: light-dark(var(--scheme-light-error-container), var(--scheme-dark-error-container));
+  --color-on-error-container: light-dark(var(--scheme-light-on-error-container), var(--scheme-dark-on-error-container));
+
+  --color-background: light-dark(var(--scheme-light-background), var(--scheme-dark-background));
+  --color-on-background: light-dark(var(--scheme-light-on-background), var(--scheme-dark-on-background));
+
+  --color-surface-bright: light-dark(var(--scheme-light-surface-bright), var(--scheme-dark-surface-bright));
+  --color-surface: light-dark(var(--scheme-light-surface), var(--scheme-dark-surface));
+  --color-surface-dim: light-dark(var(--scheme-light-surface-dim), var(--scheme-dark-surface-dim));
+  --color-on-surface: light-dark(var(--scheme-light-on-surface), var(--scheme-dark-on-surface));
+  --color-surface-tint: light-dark(var(--scheme-light-surface-tint), var(--scheme-dark-surface-tint));
+
+  --color-surface-container-lowest: light-dark(var(--scheme-light-surface-container-lowest), var(--scheme-dark-surface-container-lowest));
+  --color-surface-container-low: light-dark(var(--scheme-light-surface-container-low), var(--scheme-dark-surface-container-low));
+  --color-surface-container: light-dark(var(--scheme-light-surface-container), var(--scheme-dark-surface-container));
+  --color-surface-container-high: light-dark(var(--scheme-light-surface-container-high), var(--scheme-dark-surface-container-high));
+  --color-surface-container-highest: light-dark(var(--scheme-light-surface-container-highest), var(--scheme-dark-surface-container-highest));
+
+  --color-surface-variant: light-dark(var(--scheme-light-surface-variant), var(--scheme-dark-surface-variant));
+  --color-on-surface-variant: light-dark(var(--scheme-light-on-surface-variant), var(--scheme-dark-on-surface-variant));
+
+  --color-inverse-surface: light-dark(var(--scheme-light-inverse-surface), var(--scheme-dark-inverse-surface));
+  --color-inverse-on-surface: light-dark(var(--scheme-light-inverse-on-surface), var(--scheme-dark-inverse-on-surface));
+  --color-inverse-primary: light-dark(var(--scheme-light-inverse-primary), var(--scheme-dark-inverse-primary));
+
+  --color-outline: light-dark(var(--scheme-light-outline), var(--scheme-dark-outline));
+  --color-outline-variant: light-dark(var(--scheme-light-outline-variant), var(--scheme-dark-outline-variant));
+
+  --color-shadow: var(--scheme-shadow);
+  --color-scrim: var(--scheme-scrim);
+}

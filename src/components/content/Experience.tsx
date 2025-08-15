@@ -9,17 +9,32 @@ export const Experience = () => {
     <Section>
       <SectionHeader title="Experience" />
       <ul>
-        <TimelineItem connected selected>
+        <TimelineItem selected connected="half">
           <Job
-            jobTitle="Senior Front-End Software Engineer"
-            companyName="Primaton"
-            companyLink="https://www.primaton.com"
-            start="2025-01"
+            title="Senior Front-End Software Engineer"
+            companyName="Equixly API Security"
+            companyLink="https://equixly.com/"
+            start="2025-06"
           />
         </TimelineItem>
-        <TimelineItem connected>
+        <TimelineItem connected="half">
           <Job
-            jobTitle="Senior Front-End Software Engineer"
+            title="Senior Front-End Software Engineer"
+            companyName="Primaton"
+            companyLink="https://primaton.it/"
+            start="2025-01"
+            end="2025-06"
+          >
+            I played a key role in structuring and implementing the micro-frontend architecture of the main application,
+            ensuring scalability, maintainability, and smooth integration between independent modules.
+            <br />
+            In addition, I led the initial definition and adoption of the design system, setting foundational guidelines
+            for UI consistency, accessibility, and component reusability.
+          </Job>
+        </TimelineItem>
+        <TimelineItem connected="full">
+          <Job
+            title="Senior Front-End Software Engineer"
             companyName="Milkman Technologies"
             companyLink="https://www.milkmantechnologies.com"
             start="2021-05"
@@ -44,9 +59,9 @@ export const Experience = () => {
             </Accordion>
           </Job>
         </TimelineItem>
-        <TimelineItem connected>
+        <TimelineItem connected="half">
           <Job
-            jobTitle="Front-End Software Engineer"
+            title="Front-End Software Engineer"
             companyName="Milkman Technologies"
             companyLink="https://www.milkmantechnologies.com"
             start="2019-05"
@@ -63,7 +78,7 @@ export const Experience = () => {
         </TimelineItem>
         <TimelineItem>
           <Job
-            jobTitle="Full-Stack Developer"
+            title="Full-Stack Developer"
             companyName="Aktive Reply"
             companyLink="https://www.reply.com/aktive-reply"
             start="2016-11"
@@ -74,7 +89,7 @@ export const Experience = () => {
           </Job>
         </TimelineItem>
         <TimelineItem>
-          <Job jobTitle="Java Developer (University Intern)" companyName="JuliaSoft" start="2013-11" end="2014-03">
+          <Job title="Java Developer (University Intern)" companyName="JuliaSoft" start="2013-11" end="2014-03">
             I developed a tool for "Amalia", a library for decompiling Android bytecode.
           </Job>
         </TimelineItem>

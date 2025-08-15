@@ -12,9 +12,9 @@ export const Chip = (props: ChipProps) => {
       <span
         classList={{
           'peer px-3 py-1.5 select-none rounded-full font-semibold text-sm flex align-center w-max': true,
-          'bg-gray-200 text-black': !selected && !partialSelected,
-          'bg-violet-500 text-white': selected,
-          'bg-violet-300 text-white': partialSelected,
+          'border border-primary text-primary': !selected && !partialSelected,
+          'bg-primary-container text-on-primary-container': partialSelected,
+          'bg-primary text-on-primary': selected,
         }}
       >
         {label}
